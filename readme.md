@@ -1,3 +1,5 @@
+Edit (james), I've included [an export](./GTM-TTKZ4R_v23.json) from gtm of the tags.
+
 To build this example:
 
   1. Open CuteAnimals.xcodeproj in XCode.
