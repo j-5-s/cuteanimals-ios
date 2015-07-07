@@ -15,6 +15,7 @@
 
 - (void)execute:(NSString *)tagName parameters:(NSDictionary *)parameters {
   NSLog(@"Custom function call tag :%@ is fired", tagName);
+  NSLog(@"custom parama %@",parameters[@"key1"]);
   // Other code firing this custom tag.
 }
 

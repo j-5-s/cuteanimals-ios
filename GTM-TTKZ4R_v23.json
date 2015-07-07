@@ -1,0 +1,552 @@
+{
+    "exportFormatVersion": 1.3,
+    "exportTime": "2015-07-07 00:34:45",
+    "containerVersion": {
+        "accountId": "100905791",
+        "containerId": "1360327",
+        "containerVersionId": "0",
+        "deleted": false,
+        "container": {
+            "accountId": "100905791",
+            "containerId": "1360327",
+            "name": "cuteanimals",
+            "publicId": "GTM-TTKZ4R",
+            "timeZoneCountryId": "US",
+            "timeZoneId": "America/Los_Angeles",
+            "notes": "",
+            "usageContext": [
+                "IOS"
+            ],
+            "fingerprint": "1436213630980",
+            "enabledBuiltInVariable": [
+                "EVENT",
+                "APP_ID",
+                "APP_NAME",
+                "APP_VERSION_CODE",
+                "OS_VERSION",
+                "PLATFORM",
+                "DEVICE_NAME",
+                "APP_VERSION_NAME"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "tagId": "1",
+                "name": "Universal Analytics - main",
+                "type": "ua",
+                "liveOnly": false,
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "screenName"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{DLV_screen_name}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "collectAdid",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{GA_ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_APPVIEW"
+                    }
+                ],
+                "fingerprint": "0",
+                "firingTriggerId": [
+                    "1"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "tagId": "3",
+                "name": "increment",
+                "type": "funct",
+                "liveOnly": false,
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "functionName",
+                        "value": "increment"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "functionArgument",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "sadf"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "asdf"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0",
+                "firingTriggerId": [
+                    "2147479554"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "tagId": "4",
+                "name": "macro",
+                "type": "funct",
+                "liveOnly": false,
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "functionName",
+                        "value": "mod"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "functionArgument",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "cool"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "yeah it is"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0",
+                "firingTriggerId": [
+                    "2147479554"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "tagId": "5",
+                "name": "refresh",
+                "type": "ua",
+                "liveOnly": false,
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventValue",
+                        "value": "{{increment_macro}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "collectAdid",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{GA_ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "macro {{mod}} /"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "refresh"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "e"
+                    }
+                ],
+                "fingerprint": "0",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "tagId": "2",
+                "name": "some custom function call",
+                "type": "funct",
+                "liveOnly": false,
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "functionName",
+                        "value": "custom_tag"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "functionArgument",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "one"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0",
+                "firingTriggerId": [
+                    "2147479554"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "fingerprint": "0",
+        "trigger": [
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "triggerId": "3",
+                "name": "RefreshEvent",
+                "type": "ALWAYS",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "refresh"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "triggerId": "1",
+                "name": "openScreen",
+                "type": "ALWAYS",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "openScreen"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "triggerId": "2",
+                "name": "trigger_macro",
+                "type": "ALWAYS",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "screenOpen"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "variableId": "4",
+                "name": "DLV_screen_name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "screenName"
+                    }
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "variableId": "3",
+                "name": "GA_ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "UA-64766321-1"
+                    }
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "variableId": "5",
+                "name": "increment_macro",
+                "type": "funcm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "functionName",
+                        "value": "increment"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "functionArgument",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "keey1"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "keey2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "variableId": "6",
+                "name": "mod",
+                "type": "funcm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "functionName",
+                        "value": "mod"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "functionArgument",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "1"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "key2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "variableId": "1",
+                "name": "vc",
+                "type": "vc",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "collection",
+                        "value": "{\n   hello:\"world\"\n}"
+                    }
+                ],
+                "enablingTriggerId": [
+                    "2147479555"
+                ],
+                "fingerprint": "0"
+            },
+            {
+                "accountId": "100905791",
+                "containerId": "1360327",
+                "variableId": "2",
+                "name": "vc2",
+                "type": "vc",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "collection",
+                        "value": "{\n  Adjective: \"Nice\",\n  Title: \"some other title\"\n}"
+                    }
+                ],
+                "enablingTriggerId": [
+                    "2147479555"
+                ],
+                "fingerprint": "0"
+            }
+        ]
+    }
+}

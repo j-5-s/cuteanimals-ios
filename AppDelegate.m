@@ -56,7 +56,7 @@
   }
 
   // Open a container.
-  [TAGContainerOpener openContainerWithId:@"GTM-XXXX"
+  [TAGContainerOpener openContainerWithId:@"GTM-TTKZ4R"
                                tagManager:self.tagManager
                                  openType:kTAGOpenTypePreferNonDefault
                                   timeout:nil
@@ -72,6 +72,9 @@
   // notification back to the main thread to avoid a race condition with viewDidAppear.
   dispatch_async(dispatch_get_main_queue(), ^{
     self.container = container;
+      
+    NSString *world = [container stringForKey:@"hello"];
+    NSLog(@"hello %@", world);
     // Register two custom function call macros to the container.
     [self.container registerFunctionCallMacroHandler:[[CustomMacroHandler alloc] init]
                                             forMacro:@"increment"];

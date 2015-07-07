@@ -6,6 +6,8 @@ To build this example:
   3. Run the sample by clicking "Run" in the toolbar (or selecting "Product/Run"
      from the menu).
 
+Edit (james), I've included [an export](./GTM-TTKZ4R_v23.json) from gtm of the tags.
+
 This sample uses a container ID for a non-existent container: "GTM-XXXX".
 There are two corresponding files: "GTM-XXXX" and "GTM-XXXX.plist" which
 are used as default containers.
